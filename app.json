@@ -1,0 +1,55 @@
+{
+  "name": "Telegram Torrent Leecher",
+  "description": "A Telegram Torrent (and youtube-dl) Leecher based on Pyrogram. Powered by @torrentleechgdrivesupport!",
+  "keywords": [
+    "telegram"
+  ],
+  "stack": "container"
+  "repository": "https://github.com/gautamajay52/TorrentLeech-Gdrive",
+  "success_url": "https://t.me/torrentleechgdrivesupport",
+  "website": "https://github.com/gautamajay52/TorrentLeech-Gdrive",
+  "env": {
+    "APP_ID": {
+      "description": "Get this value from https://my.telegram.org",
+      "value": ""
+    },
+    "API_HASH": {
+      "description": "Get this value from https://my.telegram.org",
+      "value": ""
+    },
+    "BOT_TOKEN": {
+      "description": "get this value from @BotFather",
+      "value": ""
+    },
+    "FEED_URL": {
+      "description": "URL of RSS Feed.",
+      "value": ""
+    },
+    "LOG_CHANNEL": {
+      "description": "ID of the Telegram Channel where messages are to be posted.",
+      "value": ""
+    },
+    "DATABASE_URL": {
+      "description": "Database.",
+      "required": false
+    },
+    "INTERVAL": {
+      "description": "Checking Interval in seconds. (optional)",
+      "value": "",
+      "required": false
+    },
+    "MAX_INSTANCES": {
+      "description": "Max instances to be used while checking rss feed. (optional)",
+      "value": "",
+      "required": false
+    }
+  },
+  "addons": [
+    {
+      "plan": "heroku-postgresql",
+      "options": {
+        "version": "10"
+      }
+    }
+  ]
+}
