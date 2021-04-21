@@ -19,6 +19,7 @@ if os.environ.get("ENV"):   # Add a ENV in Environment Variables if you wanna co
   api_hash = os.environ.get("API_HASH")
   feed_url = os.environ.get("FEED_URL")
   bot_token = os.environ.get("BOT_TOKEN")
+  msg = os.environ.get("MESSAGE")
   log_channel = int(os.environ.get("LOG_CHANNEL", None))
   check_interval = int(os.environ.get("INTERVAL", 5))
   max_instances = int(os.environ.get("MAX_INSTANCES", 5))
@@ -33,7 +34,7 @@ def check_feed():
     entry = FEED.entries[0]
     if entry.id != db.get_link(feed_url).link:
                    # ↓ Edit this message as your needs.
-      message = f"/mirror {entry.link}"
+      message = (msg) {entry.link}
       try:
         app.send_message(log_channel, message)
         db.update_link(feed_url, entry.id)
