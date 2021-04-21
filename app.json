@@ -4,7 +4,7 @@
   "keywords": [
     "telegram"
   ],
-  "stack": "container",
+  "stack": "heroku-20",
   "repository": "https://github.com/kelengkeng/rss",
   "success_url": "https://github.com/kelengkeng/rss",
   "website": "https://github.com/kelengkeng/rss",
