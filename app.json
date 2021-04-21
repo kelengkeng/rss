@@ -29,19 +29,17 @@
       "description": "ID of the Telegram Channel where messages are to be posted.",
       "value": ""
     },
-    "DATABASE_URL": {
-      "description": "Database.",
-      "required": false
+    "ENV": {
+      "description": "Just leave it.",
+      "value": "True"
     },
     "INTERVAL": {
       "description": "Checking Interval in seconds. (optional)",
-      "value": "",
-      "required": false
+      "value": "5"
     },
     "MAX_INSTANCES": {
       "description": "Max instances to be used while checking rss feed. (optional)",
-      "value": "",
-      "required": false
+      "value": "5"
     }
   },
   "addons": [
