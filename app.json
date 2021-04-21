@@ -1,13 +1,13 @@
 {
-  "name": "Telegram Torrent Leecher",
-  "description": "A Telegram Torrent (and youtube-dl) Leecher based on Pyrogram. Powered by @torrentleechgdrivesupport!",
+  "name": "Telegram RSS Bot",
+  "description": "Telegram RSS Bot",
   "keywords": [
     "telegram"
   ],
-  "stack": "container"
-  "repository": "https://github.com/gautamajay52/TorrentLeech-Gdrive",
-  "success_url": "https://t.me/torrentleechgdrivesupport",
-  "website": "https://github.com/gautamajay52/TorrentLeech-Gdrive",
+  "stack": "container",
+  "repository": "https://github.com/kelengkeng/rss",
+  "success_url": "https://github.com/kelengkeng/rss",
+  "website": "https://github.com/kelengkeng/rss",
   "env": {
     "APP_ID": {
       "description": "Get this value from https://my.telegram.org",
